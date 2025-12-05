@@ -1,40 +1,131 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Q3 Earnings Report - Interactive Presentation</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section>
+                <h2>Q3 Earnings Report</h2>
+                <h1>Innovation in Financial Growth</h1>
+                <p>Technical Consultant Presentation</p>
+                <small>Contact: 24f2006326@ds.study.iitm.ac.in</small>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+                <aside class="notes">
+                    Good morning, everyone. Welcome to the Q3 Earnings Presentation. Today, we'll dive into the numbers and the technical foundation driving our success this quarter.
+                </aside>
+            </section>
+            
+            <section data-markdown>
+                <textarea data-template>
+                    ## 📊 Key Q3 Highlights
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                    * **Revenue Growth:** We achieved **15% year-over-year growth**.
+                    * **Tech Stack Migration:** Successfully completed the transition to a **cloud-native microservice architecture**.
+                    * **Client Acquisition:** Onboarded **50,000 new premium accounts**, a 20% increase.
+                    
+                    ---
+                    
+                    ### Strategic Focus
+
+                    1.  **Risk Management:** Implementing new ML models.
+                    2.  **Platform Scalability:** Preparing for H1 2026 transaction volume.
+                    3.  **Security:** Achieving ISO 27001 compliance.
+                </textarea>
+                <aside class="notes">
+                    The move to a cloud-native architecture was a major undertaking, driving efficiency and scalability, which underpins this strong revenue performance.
+                </aside>
+            </section>
+
+            <section>
+                <h3>📈 Transaction Volume Analysis</h3>
+                <p class="fragment fade-in">Total Processed Transactions: **1.2 Billion**</p>
+                
+                <p class="fragment fade-in">Impact on IT Infrastructure:</p>
+                <ul>
+                    <li class="fragment current-visible">Reduced latency by **25ms**.</li>
+                    <li class="fragment current-visible">Peak load capacity increased by **50%**.</li>
+                    <li class="fragment current-visible">Cost per transaction decreased by **12%**.</li>
+                </ul>
+
+                <aside class="notes">
+                    The key takeaway here is the significant operational improvement. The 25ms latency reduction is critical for high-frequency trading clients, and the capacity increase positions us well for future growth.
+                </aside>
+            </section>
+
+            <section>
+                <h3>💰 Return on Equity (ROE) Calculation</h3>
+                
+                <p>Return on Equity (ROE) is a measure of financial performance calculated by dividing net income by shareholders' equity.</p>
+                
+                $$
+                \text{ROE} = \frac{\text{Net Income}}{\text{Shareholders' Equity}} \times 100\%
+                $$
+                
+                <p class="fragment fade-in">This quarter's ROE is **14.5%**, reflecting strong profitability relative to equity financing.</p>
+
+                <aside class="notes">
+                    Our ROE of 14.5% is an increase over last quarter, demonstrating effective utilization of shareholder capital. We'll be using this formula to analyze divisional performance next.
+                </aside>
+            </section>
+            
+            <section>
+                <h3>🐍 Python Risk Scoring Service</h3>
+                <p>Example snippet from our new risk assessment microservice.</p>
+                
+                <pre><code data-trim data-line-numbers="2-4">
+                    def calculate_risk_score(transaction_amount, client_history):
+                        # Base score is calculated from transaction amount
+                        base_score = transaction_amount * 0.05
+                        
+                        # Apply historical risk multiplier
+                        history_multiplier = 1.0 - (client_history['fraud_count'] * 0.1)
+                        
+                        # Final score
+                        return max(0, base_score * history_multiplier)
+                </code></pre>
+
+                <aside class="notes">
+                    This function is the core of our real-time risk engine. Line 3 shows the base risk calculation, while line 6 incorporates a penalty based on the client's historical fraud count, allowing us to dynamically adjust risk assessment.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        // Full list of configuration options available at:
+        // https://revealjs.com/config/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            // Config for Math Plugin (allows LaTeX equations)
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'tex-mml-chtml'
+            },
+            
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+        });
+    </script>
+</body>
 </html>
