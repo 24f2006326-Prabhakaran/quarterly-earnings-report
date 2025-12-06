@@ -108,6 +108,19 @@
                     Our ROE of 14.5% is an increase over last quarter, demonstrating effective utilization of shareholder capital. We'll be using this formula to analyze divisional performance next.
                 </aside>
             </section>
+
+            <section>
+              <pre><code class="python" data-line-numbers="1-2|4,6-7|9">
+            import pandas as pd
+            import seaborn as sns
+
+            # Load data
+            data = pd.read_csv('data.csv')
+
+            # Create visualization
+            sns.scatterplot(data=data, x='x', y='y')
+              </code></pre>
+            </section>
             
             <section>
                 <h3>🐍 Python Risk Scoring Service</h3>
