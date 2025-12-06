@@ -1,153 +1,454 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>Q3 Earnings Report | Presented by 24f2006326@ds.study.iitm.ac.in</title>
-
-    <meta name="author" content="Technical Consultant: 24f2006326@ds.study.iitm.ac.in">
-
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/moon.css" id="theme">
-
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2024 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal .slides section.center {
+            text-align: center;
+        }
+        .email-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.5em;
+            color: #888;
+        }
+        .financial-highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .metric-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            color: #333;
+        }
+    </style>
+</head>
 <body>
     <div class="reveal">
         <div class="slides">
             
-            <section>
-                <h2>Q3 Earnings Report</h2>
-                <h1>Innovation in Financial Growth</h1>
+            <!-- Title Slide -->
+            <section class="center">
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p>Prepared by: <strong>24f2006326@ds.study.iitm.ac.in</strong></p>
+                <p><small>December 2024</small></p>
                 
-                <p>Technical Consultant Presentation by **24f2006326@ds.study.iitm.ac.in**</p>
-
                 <aside class="notes">
-                    Good morning, everyone. Welcome to the Q3 Earnings Presentation. Today, we'll dive into the numbers and the technical foundation driving our success this quarter.
+                    Welcome everyone to our Q4 2024 earnings presentation. Today we'll cover our financial performance, key metrics, and strategic initiatives for the upcoming year. This presentation will take approximately 30 minutes.
                 </aside>
             </section>
-            
+
+            <!-- Markdown Slide -->
             <section data-markdown>
                 <textarea data-template>
-                    ## 📊 Key Q3 Highlights
-
-                    * **Revenue Growth:** We achieved **15% year-over-year growth**.
-                    * **Tech Stack Migration:** Successfully completed the transition to a **cloud-native microservice architecture**.
-                    * **Client Acquisition:** Onboarded **50,000 new premium accounts**, a 20% increase.
+                    ## Executive Summary
+                    
+                    ### Key Highlights
+                    
+                    - **Revenue Growth**: 23% YoY increase
+                    - **Operating Margin**: Improved to 28.5%
+                    - **Customer Acquisition**: 1.2M new accounts
+                    - **Digital Transformation**: 85% completion
                     
                     ---
                     
-                    ### Strategic Focus
-
-                    1.  **Risk Management:** Implementing new ML models.
-                    2.  **Platform Scalability:** Preparing for H1 2026 transaction volume.
-                    3.  **Security:** Achieving ISO 27001 compliance.
+                    ### Strategic Priorities
+                    
+                    1. Market expansion in APAC region
+                    2. Enhanced cybersecurity infrastructure
+                    3. AI-powered risk assessment tools
+                    4. Sustainable finance initiatives
                 </textarea>
+                
                 <aside class="notes">
-                    The move to a cloud-native architecture was a major undertaking, driving efficiency and scalability, which underpins this strong revenue performance.
+                    This slide showcases our strong Q4 performance. Note the 23% revenue growth which exceeded analyst expectations. The operating margin improvement demonstrates our operational efficiency gains.
                 </aside>
             </section>
 
+            <!-- Animated Financial Metrics -->
             <section>
-                <h3>📈 Transaction Volume Analysis</h3>
-
-                <p class="fragment fade-in">Total Processed Transactions: **1.2 Billion**</p>
+                <h2>Financial Performance Metrics</h2>
+                <div class="metric-box">
+                    <h3 class="fragment">Revenue: <span class="financial-highlight">$4.8B</span></h3>
+                    <p class="fragment">Up 23% from Q4 2023 ($3.9B)</p>
+                </div>
+                <div class="metric-box">
+                    <h3 class="fragment">Net Income: <span class="financial-highlight">$1.2B</span></h3>
+                    <p class="fragment">Earnings Per Share: $3.45</p>
+                </div>
+                <div class="metric-box">
+                    <h3 class="fragment">Assets Under Management: <span class="financial-highlight">$285B</span></h3>
+                    <p class="fragment">12% growth QoQ</p>
+                </div>
                 
-                <p class="fragment fade-in">Impact on IT Infrastructure:</p>
-                <ul>
-                    <li class="fragment current-visible">Reduced latency by **25ms**.</li>
-                    <li class="fragment current-visible">Peak load capacity increased by **50%**.</li>
-                    <li class="fragment current-visible">Cost per transaction decreased by **12%**.</li>
-                </ul>
                 <aside class="notes">
-                    The key takeaway here is the significant operational improvement. The 25ms latency reduction is critical for high-frequency trading clients, and the capacity increase positions us well for future growth.
+                    Walk through each metric slowly, allowing the fragments to reveal. Emphasize the revenue growth and its drivers. Mention that AUM growth was driven by both market performance and net new client assets.
                 </aside>
             </section>
 
-            <!-- List items appear one by one -->
+            <!-- Mathematical Formulas -->
             <section>
-              <h2>Key Points</h2>
-              <ul>
-                <li class="fragment">First point</li>
-                <li class="fragment">Second point</li>
-                <li class="fragment fade-up">Animated point</li>
-              </ul>
-            </section>
-            
-            <!-- Chart sections appear gradually -->
-            <section>
-              <h2>Data Flow</h2>
-              <div class="r-stack">
-                <img class="fragment" src="step1.svg" />
-                <img class="fragment" src="step2.svg" />
-                <img class="fragment" src="step3.svg" />
-              </div>
-            </section>
-
-            <section>
-                <h3>💰 Return on Equity (ROE) Calculation</h3>
+                <h2>Key Financial Calculations</h2>
                 
-                <p>Return on Equity (ROE) is a measure of financial performance calculated by dividing net income by shareholders' equity.</p>
+                <h3>Return on Equity (ROE)</h3>
+                <p>$$ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} = \frac{1.2B}{8.5B} = 14.1\%$$</p>
                 
-                $$
-                \text{ROE} = \frac{\text{Net Income}}{\text{Shareholders' Equity}} \times 100\%
-                $$
+                <h3 class="fragment">Compound Annual Growth Rate (CAGR)</h3>
+                <p class="fragment">$$CAGR = \left(\frac{V_f}{V_i}\right)^{\frac{1}{n}} - 1$$</p>
+                <p class="fragment">$$CAGR_{3yr} = \left(\frac{4.8B}{3.2B}\right)^{\frac{1}{3}} - 1 = 14.5\%$$</p>
                 
-                <p class="fragment fade-in">This quarter's ROE is **14.5%**, reflecting strong profitability relative to equity financing.</p>
-
+                <h3 class="fragment">Sharpe Ratio</h3>
+                <p class="fragment">$$S = \frac{R_p - R_f}{\sigma_p}$$</p>
+                <p class="fragment">Where $R_p$ is portfolio return, $R_f$ is risk-free rate, and $\sigma_p$ is standard deviation</p>
+                
                 <aside class="notes">
-                    Our ROE of 14.5% is an increase over last quarter, demonstrating effective utilization of shareholder capital. We'll be using this formula to analyze divisional performance next.
+                    These formulas demonstrate our strong financial health. The ROE of 14.1% is above industry average of 12%. Our 3-year CAGR of 14.5% shows consistent growth trajectory. The Sharpe ratio will be discussed in detail in the portfolio performance section.
                 </aside>
             </section>
-            
+
+            <!-- Code Sample: Python -->
             <section>
-                <h3>🐍 Python Risk Scoring Service</h3>
-                <p>Example snippet from our new risk assessment microservice.</p>
-                
-                <pre><code class="language-python" data-trim data-line-numbers="2-4">
-                    def calculate_risk_score(transaction_amount, client_history):
-                        # Base score is calculated from transaction amount
-                        base_score = transaction_amount * 0.05
-                        
-                        # Apply historical risk multiplier
-                        history_multiplier = 1.0 - (client_history['fraud_count'] * 0.1)
-                        
-                        # Final score
-                        return max(0, base_score * history_multiplier)
+                <h2>Risk Assessment Algorithm</h2>
+                <p>Our proprietary risk scoring model implemented in Python:</p>
+                <pre><code class="python" data-trim data-line-numbers="1-3|5-8|10-14">
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+
+def calculate_risk_score(customer_data):
+    """
+    Calculate customer risk score using ML model
+    """
+    features = ['credit_score', 'income', 'debt_ratio', 
+                'payment_history', 'account_age']
+    
+    X = customer_data[features]
+    risk_score = risk_model.predict_proba(X)[:, 1]
+    
+    return {
+        'score': risk_score,
+        'category': categorize_risk(risk_score),
+        'recommendations': generate_recommendations(risk_score)
+    }
+
+# Model Performance Metrics
+accuracy = 0.94
+precision = 0.91
+recall = 0.89
+f1_score = 0.90
                 </code></pre>
-
+                
                 <aside class="notes">
-                    This function is the core of our real-time risk engine. Line 3 shows the base risk calculation, while line 6 incorporates a penalty based on the client's historical fraud count, allowing us to dynamically adjust risk assessment.
+                    This is our new AI-powered risk assessment system launched in Q3. It has 94% accuracy in predicting default risk. The model uses Random Forest classifier and processes over 50,000 assessments daily. This has reduced manual review time by 65%.
                 </aside>
             </section>
+
+            <!-- Code Sample: SQL -->
+            <section>
+                <h2>Transaction Analysis Query</h2>
+                <p>Daily transaction monitoring for fraud detection:</p>
+                <pre><code class="sql" data-trim data-line-numbers>
+-- Identify suspicious transaction patterns
+SELECT 
+    account_id,
+    COUNT(*) as transaction_count,
+    SUM(amount) as total_amount,
+    AVG(amount) as avg_amount,
+    STDDEV(amount) as amount_stddev
+FROM transactions
+WHERE 
+    transaction_date >= CURRENT_DATE - INTERVAL '7 days'
+    AND status = 'completed'
+GROUP BY account_id
+HAVING 
+    COUNT(*) > 100 
+    OR SUM(amount) > 1000000
+    OR STDDEV(amount) > AVG(amount) * 3
+ORDER BY total_amount DESC;
+                </code></pre>
+                <p class="fragment"><small>This query helped identify 2,347 potentially fraudulent transactions in Q4</small></p>
+                
+                <aside class="notes">
+                    Our fraud detection system runs this query every 15 minutes. It flags accounts with unusual transaction patterns for manual review. The system has a false positive rate of only 0.8% and has saved an estimated $47M in prevented fraud this quarter.
+                </aside>
+            </section>
+
+            <!-- JavaScript Code Sample -->
+            <section>
+                <h2>Real-Time Portfolio Dashboard</h2>
+                <pre><code class="javascript" data-trim data-line-numbers="1-5|7-13|15-20">
+// Real-time portfolio value calculator
+class PortfolioTracker {
+    constructor(holdings) {
+        this.holdings = holdings;
+        this.websocket = new WebSocket('wss://market-data.api');
+    }
+    
+    calculateTotalValue() {
+        return this.holdings.reduce((total, holding) => {
+            const currentPrice = this.getMarketPrice(holding.symbol);
+            return total + (holding.quantity * currentPrice);
+        }, 0);
+    }
+    
+    getPerformanceMetrics() {
+        return {
+            totalValue: this.calculateTotalValue(),
+            dayChange: this.calculateDayChange(),
+            totalReturn: this.calculateTotalReturn(),
+            sharpeRatio: this.calculateSharpeRatio()
+        };
+    }
+}
+
+// Process 1.2M portfolio updates per second
+const avgLatency = '45ms';
+const uptime = '99.99%';
+                </code></pre>
+                
+                <aside class="notes">
+                    This is the core of our portfolio management platform that serves 2.8 million active users. The system handles 1.2 million portfolio updates per second with average latency of 45ms. We achieved 99.99% uptime in Q4.
+                </aside>
+            </section>
+
+            <!-- Animated Revenue Breakdown -->
+            <section>
+                <h2>Revenue Breakdown by Segment</h2>
+                <ul>
+                    <li class="fragment">
+                        <strong>Wealth Management:</strong> $2.1B (44%)
+                        <span class="fragment">↑ 18% YoY</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Investment Banking:</strong> $1.5B (31%)
+                        <span class="fragment">↑ 26% YoY</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Trading Services:</strong> $0.8B (17%)
+                        <span class="fragment">↑ 15% YoY</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Digital Banking:</strong> $0.4B (8%)
+                        <span class="fragment">↑ 45% YoY</span>
+                    </li>
+                </ul>
+                <p class="fragment" style="margin-top: 40px;">
+                    <small>Contact: <strong>24f2006326@ds.study.iitm.ac.in</strong></small>
+                </p>
+                
+                <aside class="notes">
+                    Wealth Management remains our largest revenue driver. Note the exceptional 45% growth in Digital Banking - this validates our digital-first strategy. Investment Banking growth was driven by strong M&A advisory fees and IPO underwriting.
+                </aside>
+            </section>
+
+            <!-- Customer Metrics with Animations -->
+            <section>
+                <h2>Customer Growth Metrics</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="metric-box fragment">
+                        <h3>Total Customers</h3>
+                        <p style="font-size: 2em; color: #4CAF50;">12.8M</p>
+                        <p>↑ 1.2M in Q4</p>
+                    </div>
+                    <div class="metric-box fragment">
+                        <h3>Active Users (Monthly)</h3>
+                        <p style="font-size: 2em; color: #4CAF50;">8.5M</p>
+                        <p>66% engagement rate</p>
+                    </div>
+                    <div class="metric-box fragment">
+                        <h3>Customer Satisfaction</h3>
+                        <p style="font-size: 2em; color: #4CAF50;">4.7/5.0</p>
+                        <p>Net Promoter Score: 68</p>
+                    </div>
+                    <div class="metric-box fragment">
+                        <h3>Avg. Account Value</h3>
+                        <p style="font-size: 2em; color: #4CAF50;">$22,300</p>
+                        <p>↑ 8% from Q3</p>
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    Customer acquisition exceeded our target of 1M new accounts. The 66% engagement rate is industry-leading. Our NPS of 68 puts us in the 'excellent' category. The increase in average account value shows we're attracting higher-net-worth individuals.
+                </aside>
+            </section>
+
+            <!-- Cost Efficiency Analysis -->
+            <section>
+                <h2>Operational Efficiency</h2>
+                
+                <h3>Cost-to-Income Ratio</h3>
+                <p>$$\text{Cost-to-Income Ratio} = \frac{\text{Operating Expenses}}{\text{Operating Income}} \times 100$$</p>
+                
+                <div class="fragment">
+                    <p>$$\text{Q4 2024: } \frac{2.4B}{4.8B} \times 100 = 50\%$$</p>
+                    <p>$$\text{Q4 2023: } \frac{2.2B}{3.9B} \times 100 = 56.4\%$$</p>
+                </div>
+                
+                <p class="fragment financial-highlight" style="font-size: 1.5em; margin-top: 30px;">
+                    Efficiency Improvement: 6.4 percentage points
+                </p>
+                
+                <aside class="notes">
+                    Our cost-to-income ratio improved significantly from 56.4% to 50%, demonstrating strong operational leverage. This was achieved through automation initiatives, process optimization, and strategic outsourcing. Industry benchmark is around 55%, so we're performing well above average.
+                </aside>
+            </section>
+
+            <!-- Technology Investments -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Technology Investments
+                    
+                    ### Infrastructure Modernization
+                    
+                    - **Cloud Migration**: 78% complete <!-- .element: class="fragment" -->
+                    - **API Gateway**: 5B requests/day <!-- .element: class="fragment" -->
+                    - **Data Lake**: 15PB storage <!-- .element: class="fragment" -->
+                    - **ML Models**: 47 in production <!-- .element: class="fragment" -->
+                    
+                    ### Cybersecurity Enhancements <!-- .element: class="fragment" -->
+                    
+                    - Zero-trust architecture implementation
+                    - 24/7 SOC monitoring
+                    - Quarterly penetration testing
+                    - Employee security training: 100% completion
+                    
+                    **IT Budget: $420M (+15% YoY)**
+                </textarea>
+                
+                <aside class="notes">
+                    Our technology investments are critical to our competitive advantage. The cloud migration will complete by Q2 2025. Our API gateway handles 5 billion requests daily with 99.97% uptime. The data lake enables advanced analytics and AI/ML initiatives. We have 47 ML models in production covering risk assessment, fraud detection, customer segmentation, and personalized recommendations.
+                </aside>
+            </section>
+
+            <!-- Risk Management -->
+            <section>
+                <h2>Risk Management Framework</h2>
+                
+                <h3>Value at Risk (VaR) Calculation</h3>
+                <p>95% confidence level, 1-day holding period:</p>
+                <p>$$\text{VaR}_{95\%} = \mu - 1.645\sigma$$</p>
+                
+                <div class="fragment">
+                    <h3>Portfolio Risk Metrics</h3>
+                    <ul>
+                        <li>VaR (95%): <span class="financial-highlight">$47M</span></li>
+                        <li>Expected Shortfall: <span class="financial-highlight">$62M</span></li>
+                        <li>Beta: <span class="financial-highlight">0.92</span></li>
+                        <li>Volatility: <span class="financial-highlight">12.5%</span></li>
+                    </ul>
+                </div>
+                
+                <aside class="notes">
+                    Our VaR model indicates that we have a 5% chance of losing more than $47M in a single day. The Expected Shortfall tells us that if losses exceed VaR, the average loss would be $62M. Our portfolio beta of 0.92 suggests slightly lower volatility than the market. All risk metrics are within board-approved limits.
+                </aside>
+            </section>
+
+            <!-- Market Outlook -->
+            <section>
+                <h2>2025 Market Outlook</h2>
+                <div class="fragment">
+                    <h3>Economic Assumptions</h3>
+                    <ul>
+                        <li>GDP Growth: 2.5-3.0%</li>
+                        <li>Inflation Target: 2.0-2.5%</li>
+                        <li>Interest Rates: Stable to slightly declining</li>
+                        <li>Market Volatility: Moderate (VIX: 15-20)</li>
+                    </ul>
+                </div>
+                
+                <div class="fragment" style="margin-top: 30px;">
+                    <h3>Strategic Initiatives for 2025</h3>
+                    <ol>
+                        <li>Expand into sustainable finance ($500M target)</li>
+                        <li>Launch AI-powered wealth advisory platform</li>
+                        <li>Open 15 new branches in high-growth markets</li>
+                        <li>Complete digital transformation roadmap</li>
+                    </ol>
+                </div>
+                
+                <aside class="notes">
+                    We're optimistic about 2025 despite ongoing economic uncertainties. Our diversified business model positions us well across different market scenarios. The sustainable finance initiative aligns with growing ESG investment demand. Our AI-powered advisory platform will democratize wealth management for mass affluent customers.
+                </aside>
+            </section>
+
+            <!-- Q&A Slide -->
+            <section class="center">
+                <h1>Questions & Discussion</h1>
+                <div style="margin-top: 60px;">
+                    <p>Prepared by: <strong>24f2006326@ds.study.iitm.ac.in</strong></p>
+                    <p><small>For investor relations inquiries, please contact:</small></p>
+                    <p><small>investor.relations@company.com</small></p>
+                </div>
+                
+                <aside class="notes">
+                    Open the floor for questions. Be prepared to discuss: 1) Digital banking growth drivers, 2) Cost reduction initiatives, 3) Competitive positioning, 4) Regulatory compliance costs, 5) Market share gains, 6) Technology ROI. Thank the audience for their time and attention.
+                </aside>
+            </section>
+
+            <!-- Disclaimer Slide -->
+            <section>
+                <h2>Important Disclaimer</h2>
+                <p style="font-size: 0.7em;">
+                    This presentation contains forward-looking statements within the meaning of applicable securities laws. These statements are based on current expectations and assumptions and are subject to risks and uncertainties. Actual results may differ materially from those expressed or implied in these forward-looking statements.
+                </p>
+                <p style="font-size: 0.7em; margin-top: 20px;">
+                    Past performance is not indicative of future results. All figures are unaudited and subject to change. This presentation is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities.
+                </p>
+                <p style="font-size: 0.6em; margin-top: 30px;">
+                    Contact: <strong>24f2006326@ds.study.iitm.ac.in</strong>
+                </p>
+                
+                <aside class="notes">
+                    Standard legal disclaimer. Remind attendees that all forward-looking statements are subject to risks and uncertainties outlined in our SEC filings. Emphasize that this is an earnings presentation and not investment advice.
+                </aside>
+            </section>
+
         </div>
     </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/math/math.js"></script>
-    <script>
-        // Full list of configuration options available at:
-        // https://revealjs.com/config/
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
+    <div class="email-footer">24f2006326@ds.study.iitm.ac.in</div>
 
-            // Config for Math Plugin (allows LaTeX equations)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
             math: {
-                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-                config: 'tex-mml-chtml'
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js',
+                config: 'TeX-AMS_HTML-full'
             },
-            
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.MathJax3
+            ]
         });
     </script>
 </body>
