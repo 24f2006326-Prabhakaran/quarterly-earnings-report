@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2024 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        .reveal .email {
+            font-size: 0.8em;
+            color: #42affa;
+            margin-top: 20px;
+        }
+        .reveal .formula-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .reveal code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .reveal pre code {
+            max-height: 500px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Slide 1: Title Slide with Email -->
+            <section>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Institution Quarterly Review</h3>
+                <p class="email">Prepared by: 24f2006326@ds.study.iitm.ac.in</p>
+                <p><small>December 2024</small></p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2024 earnings presentation. 
+                    Today we'll review our financial performance, key metrics, and strategic initiatives.
+                    Please hold questions until the end.
+                </aside>
+            </section>
+
+            <!-- Slide 2: Markdown Content with Fragments -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    Our Q4 performance highlights:
+                    
+                    * Revenue Growth: **15.3%** YoY <!-- .element: class="fragment" data-fragment-index="1" -->
+                    * Net Profit Margin: **23.7%** <!-- .element: class="fragment" data-fragment-index="2" -->
+                    * Customer Acquisition: **+2.4M** new accounts <!-- .element: class="fragment" data-fragment-index="3" -->
+                    * Digital Transactions: **87%** of total volume <!-- .element: class="fragment" data-fragment-index="4" -->
+                    
+                    ---
+                    
+                    Contact: 24f2006326@ds.study.iitm.ac.in
+                    
+                    Note: Email appears multiple times throughout presentation
+                </textarea>
+                <aside class="notes">
+                    This slide shows our key performance indicators for Q4.
+                    Notice the strong revenue growth and increasing digital adoption.
+                    The fragment animations help emphasize each metric progressively.
+                </aside>
+            </section>
+
+            <!-- Slide 3: Financial Formulas with MathJax -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <div class="formula-box">
+                    <h4 class="fragment">Return on Equity (ROE)</h4>
+                    <p class="fragment">
+                        \[ ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} \times 100\% \]
+                    </p>
+                </div>
+                <div class="formula-box">
+                    <h4 class="fragment">Earnings Per Share (EPS)</h4>
+                    <p class="fragment">
+                        \[ EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Shares Outstanding}} \]
+                    </p>
+                </div>
+                <div class="formula-box">
+                    <h4 class="fragment">Price-to-Earnings Ratio</h4>
+                    <p class="fragment">
+                        \[ P/E = \frac{\text{Market Price per Share}}{\text{Earnings per Share}} \]
+                    </p>
+                </div>
+                <p class="email fragment">Analysis by: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    These formulas represent our core financial metrics.
+                    ROE measures profitability relative to equity.
+                    EPS shows profit allocation per share.
+                    P/E ratio helps investors assess stock valuation.
+                </aside>
+            </section>
+
+            <!-- Slide 4: More Complex Financial Formula -->
+            <section>
+                <h2>Risk-Adjusted Returns</h2>
+                <div class="formula-box">
+                    <h4 class="fragment">Sharpe Ratio</h4>
+                    <p class="fragment">
+                        \[ S = \frac{R_p - R_f}{\sigma_p} \]
+                    </p>
+                    <p class="fragment" style="font-size: 0.8em;">
+                        Where: \(R_p\) = Portfolio Return, \(R_f\) = Risk-free Rate, \(\sigma_p\) = Standard Deviation
+                    </p>
+                </div>
+                <div class="formula-box">
+                    <h4 class="fragment">Capital Asset Pricing Model (CAPM)</h4>
+                    <p class="fragment">
+                        \[ E(R_i) = R_f + \beta_i(E(R_m) - R_f) \]
+                    </p>
+                </div>
+                <p class="email fragment">Financial Engineering: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    The Sharpe Ratio helps us understand risk-adjusted performance.
+                    A higher Sharpe ratio indicates better risk-adjusted returns.
+                    CAPM helps us determine expected returns based on systematic risk.
+                </aside>
+            </section>
+
+            <!-- Slide 5: Python Code with Syntax Highlighting -->
+            <section>
+                <h2>Revenue Analysis Script</h2>
+                <pre><code class="language-python" data-trim data-line-numbers="|1-3|5-8|10-15">
+import pandas as pd
+import numpy as np
+from datetime import datetime
+
+# Load quarterly revenue data
+revenue_data = pd.read_csv('q4_revenue.csv')
+revenue_data['date'] = pd.to_datetime(revenue_data['date'])
+revenue_data['quarter'] = revenue_data['date'].dt.quarter
+
+# Calculate year-over-year growth
+def calculate_yoy_growth(current, previous):
+    """Calculate YoY percentage growth"""
+    growth = ((current - previous) / previous) * 100
+    return round(growth, 2)
+
+# Generate report
+q4_2024 = revenue_data[revenue_data['quarter'] == 4]['revenue'].sum()
+q4_2023 = revenue_data[revenue_data['quarter'] == 4]['revenue'].shift(4).sum()
+yoy_growth = calculate_yoy_growth(q4_2024, q4_2023)
+
+print(f"Q4 2024 Revenue: ${q4_2024:,.2f}M")
+print(f"YoY Growth: {yoy_growth}%")
+                </code></pre>
+                <p class="email fragment">Code by: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    This Python script demonstrates our automated revenue analysis.
+                    We use pandas for data manipulation and numpy for calculations.
+                    The line-by-line highlighting helps explain the code flow.
+                    This automation saves hours of manual analysis each quarter.
+                </aside>
+            </section>
+
+            <!-- Slide 6: SQL Code with Syntax Highlighting -->
+            <section>
+                <h2>Customer Analytics Query</h2>
+                <pre><code class="language-sql" data-trim data-line-numbers>
+-- Q4 Customer Acquisition and Retention Analysis
+SELECT 
+    customer_segment,
+    COUNT(DISTINCT customer_id) AS total_customers,
+    SUM(transaction_amount) AS total_revenue,
+    AVG(transaction_amount) AS avg_transaction,
+    COUNT(CASE WHEN signup_date >= '2024-10-01' 
+               THEN 1 END) AS new_customers_q4
+FROM customers c
+JOIN transactions t ON c.customer_id = t.customer_id
+WHERE t.transaction_date BETWEEN '2024-10-01' AND '2024-12-31'
+    AND t.status = 'completed'
+GROUP BY customer_segment
+HAVING total_revenue > 100000
+ORDER BY total_revenue DESC;
+                </code></pre>
+                <p class="email fragment">Database Analysis: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    This SQL query helps us understand customer behavior by segment.
+                    We track both new acquisitions and revenue generation.
+                    The HAVING clause filters for significant revenue segments.
+                    This data drives our marketing and retention strategies.
+                </aside>
+            </section>
+
+            <!-- Slide 7: JavaScript Code with Syntax Highlighting -->
+            <section>
+                <h2>Real-Time Dashboard Component</h2>
+                <pre><code class="language-javascript" data-trim data-line-numbers>
+// Real-time earnings dashboard update
+class EarningsMonitor {
+    constructor(apiEndpoint) {
+        this.endpoint = apiEndpoint;
+        this.updateInterval = 5000; // 5 seconds
+    }
+    
+    async fetchLatestData() {
+        try {
+            const response = await fetch(this.endpoint);
+            const data = await response.json();
+            return {
+                revenue: data.total_revenue,
+                transactions: data.transaction_count,
+                timestamp: new Date().toISOString()
+            };
+        } catch (error) {
+            console.error('Data fetch failed:', error);
+            return null;
+        }
+    }
+    
+    startMonitoring() {
+        setInterval(async () => {
+            const metrics = await this.fetchLatestData();
+            this.updateDashboard(metrics);
+        }, this.updateInterval);
+    }
+}
+
+// Initialize monitor
+const monitor = new EarningsMonitor('/api/v1/earnings');
+monitor.startMonitoring();
+                </code></pre>
+                <p class="email fragment">Frontend Dev: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    This JavaScript component powers our real-time earnings dashboard.
+                    It fetches updated data every 5 seconds to keep stakeholders informed.
+                    The async/await pattern ensures smooth, non-blocking updates.
+                </aside>
+            </section>
+
+            <!-- Slide 8: Animated Financial Metrics -->
+            <section>
+                <h2>Q4 Performance Breakdown</h2>
+                <table style="width: 100%; font-size: 0.9em;">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Q4 2024</th>
+                            <th>Q4 2023</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fragment">
+                            <td>Total Revenue</td>
+                            <td>$1,247M</td>
+                            <td>$1,081M</td>
+                            <td style="color: #5cb85c;">+15.3%</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Operating Income</td>
+                            <td>$387M</td>
+                            <td>$312M</td>
+                            <td style="color: #5cb85c;">+24.0%</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Net Income</td>
+                            <td>$296M</td>
+                            <td>$241M</td>
+                            <td style="color: #5cb85c;">+22.8%</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>EPS</td>
+                            <td>$3.42</td>
+                            <td>$2.79</td>
+                            <td style="color: #5cb85c;">+22.6%</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>ROE</td>
+                            <td>18.7%</td>
+                            <td>16.2%</td>
+                            <td style="color: #5cb85c;">+2.5pp</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="email fragment" style="margin-top: 30px;">Compiled by: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    These metrics show strong performance across all key indicators.
+                    Revenue growth of 15.3% exceeded our guidance of 12-14%.
+                    Net income growth of 22.8% demonstrates operational efficiency.
+                    ROE improvement reflects better capital utilization.
+                </aside>
+            </section>
+
+            <!-- Slide 9: Another Mathematical Formula -->
+            <section>
+                <h2>Compound Annual Growth Rate</h2>
+                <div class="formula-box">
+                    <p class="fragment">
+                        \[ CAGR = \left(\frac{V_f}{V_i}\right)^{\frac{1}{n}} - 1 \]
+                    </p>
+                    <p class="fragment" style="font-size: 0.8em; margin-top: 20px;">
+                        Where: <br>
+                        \(V_f\) = Final Value <br>
+                        \(V_i\) = Initial Value <br>
+                        \(n\) = Number of years
+                    </p>
+                </div>
+                <div class="fragment" style="margin-top: 30px;">
+                    <h4>Our 5-Year CAGR</h4>
+                    <p style="font-size: 1.2em;">
+                        \[ CAGR = \left(\frac{1247}{687}\right)^{\frac{1}{5}} - 1 = 12.7\% \]
+                    </p>
+                </div>
+                <p class="email fragment">Calculated by: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    CAGR provides a smoothed annual growth rate over multiple years.
+                    Our 5-year CAGR of 12.7% demonstrates consistent growth.
+                    This metric is particularly useful for long-term investors.
+                </aside>
+            </section>
+
+            <!-- Slide 10: Strategic Initiatives with Fragments -->
+            <section>
+                <h2>2025 Strategic Priorities</h2>
+                <ol style="font-size: 0.9em; line-height: 1.8;">
+                    <li class="fragment">
+                        <strong>Digital Transformation</strong><br>
+                        <span style="font-size: 0.85em;">Expand AI-powered advisory services and mobile banking capabilities</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Market Expansion</strong><br>
+                        <span style="font-size: 0.85em;">Enter 3 new geographic markets in Southeast Asia</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Product Innovation</strong><br>
+                        <span style="font-size: 0.85em;">Launch blockchain-based settlement system for institutional clients</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Sustainability</strong><br>
+                        <span style="font-size: 0.85em;">Achieve carbon-neutral operations by Q4 2025</span>
+                    </li>
+                    <li class="fragment">
+                        <strong>Customer Experience</strong><br>
+                        <span style="font-size: 0.85em;">Reduce average resolution time by 40% through automation</span>
+                    </li>
+                </ol>
+                <p class="email fragment" style="margin-top: 30px;">Strategy Lead: 24f2006326@ds.study.iitm.ac.in</p>
+                <aside class="notes">
+                    These five strategic priorities will guide our 2025 initiatives.
+                    Digital transformation remains our top priority with 35% of capital allocation.
+                    Market expansion focuses on high-growth economies.
+                    Product innovation will differentiate us from competitors.
+                    Sustainability and customer experience are foundational to our brand.
+                </aside>
+            </section>
+
+            <!-- Slide 11: Closing with Contact -->
+            <section>
+                <h2>Thank You</h2>
+                <h3 style="margin-top: 50px;">Questions & Discussion</h3>
+                <div style="margin-top: 60px; font-size: 0.9em;">
+                    <p><strong>Contact Information</strong></p>
+                    <p class="email" style="font-size: 1.1em;">24f2006326@ds.study.iitm.ac.in</p>
+                    <p style="margin-top: 30px; font-size: 0.8em;">
+                        Investor Relations: ir@financialinstitution.com<br>
+                        Media Inquiries: press@financialinstitution.com
+                    </p>
+                </div>
+                <aside class="notes">
+                    Thank you for your attention during this presentation.
+                    I'm now happy to take any questions about our Q4 performance.
+                    Please feel free to reach out via email for follow-up discussions.
+                    Our investor relations team is also available for detailed inquiries.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            slideNumber: true,
+            transition: 'slide',
+            plugins: [ 
+                RevealMarkdown, 
+                RevealHighlight, 
+                RevealNotes,
+                RevealMath.KaTeX
+            ],
+            math: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js',
+                config: 'TeX-AMS_HTML-full',
+                TeX: {
+                    Macros: {
+                        R: '\\mathbb{R}',
+                        set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
